@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import cmd
+from models import base_model
 
 
 class HBNBCommand(cmd.Cmd):
@@ -15,6 +16,24 @@ class HBNBCommand(cmd.Cmd):
     def do_quit(self, quit):
         '''Quit command to exit the program'''
         return True
+
+class BaseModel:
+    '''creates a new instance of BaseModel'''
+    
+    def create(self):
+        pass
+
+    def show(self):
+        pass
+
+    def destroy(self):
+        pass
+
+    def all(self):
+        pass
+
+    def update(self):
+        pass
 
 
 if __name__ == '__main__':
